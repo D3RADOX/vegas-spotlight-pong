@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas Spotlight Pong</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+        canvas {
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff;
+        }
+        #ui {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffd700;
+            text-shadow: 0 0 10px #ff00ff;
+            font-size: 24px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="ui">VEGAS SPOTLIGHT PONG<br>Player 1: 0 | Player 2: 0</div>
+    <canvas id="game" width="800" height="500"></canvas>
+    <script src="pong.js"></script>
+</body>
+</html>
